@@ -12,6 +12,7 @@ import express = require('express');
 
    const ADMIN_PATH = '/admin';
    const app = express();
+   app.disable('x-powered-by');
 
    Resource.validate = validate;
    AdminJS.registerAdapter({ Database, Resource });
